@@ -1,0 +1,49 @@
+:root{
+  font-family: Arial;
+  color: white;
+ 
+}
+body{
+  background-image: linear-gradient(to bottom, rgba(5,10,39,0.7), rgba(5,10,39,0.7)), url(/public/bg.jpg);
+  background-position:center top;
+  background-attachment: fixed;
+  background-size:cover;
+}
+.button{
+  background-color: transparent;
+  color: white;
+  font-size: large;
+  padding: 5px;
+  border: 2px solid white;
+  border-radius: 1vh;
+}
+
+#header{
+  text-align: center;
+  font-size: x-large;
+  border: solid 5px white;
+  border-radius: 3vh;
+  padding: 1vw;
+  margin: auto 10vw;
+}
+
+.box{
+  display: flex;
+  margin: 5vh 10vw;
+  justify-content:space-around;
+}
+
+#quote{
+  text-align: center;
+}
+
+.image{
+  max-width: 50%;
+  border: 4px solid white;
+  border-radius: 2vw;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+}
