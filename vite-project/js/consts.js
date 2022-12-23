@@ -13,7 +13,7 @@ const img = {
 };
 
 const API = {
-  characters: "https://api.genshin.dev/characters",
-  nations: "https://api.genshin.dev/nations",
-  enemy: "https://api.genshin.dev/enemies",
+  characters: "https://genshinlist.com/api/characters",
+  weapons: "https://genshinlist.com/api/weapons",
+  artifacts: "https://genshinlist.com/api/artifacts",
 };
