@@ -33,7 +33,7 @@ async function getData(x, y, z) {
 
     <h1> ${x.name} </h1>
     <h2>  ${x.vision} ${x.weapon} </h2>
-    <h3> ${x.rarity} - Obtained by ${x.obtain} </h3> 
+    <h3> ${x.rarity} Star Character - Obtained by ${x.obtain} </h3> 
     <p> ${x.description} </p> 
      
    </div>`
@@ -61,7 +61,7 @@ async function data2(x, y, z) {
     <h1> ${x.name} </h1>
     </h2>${x.type} </h2>
     <h3>  ATK: ${x.atk} <h3> 
-    <p> ${x.rarity} - Obtained by ${x.obtain} </p>     
+    <p> ${x.rarity} Star Weapon - Obtained by ${x.obtain} </p>     
    </div>`
       )
     );
@@ -83,11 +83,11 @@ async function data3(x, y, z) {
       text.insertAdjacentHTML(
         "beforeend",
         `<div class="card">
-
     <h1> ${x.name} </h1>
-    <h2>2 Set Bonus: ${x._set_bonus} </h2>
-    <h2>4 Set Bonus: ${x._set_bonus} <h3> 
-
+    <h2>2 Set Bonus</h2>
+    <p>${x["2_set_bonus"]} </p>
+    <h2> 4 Set Bonus </h2>
+    <p>${x["4_set_bonus"]}</p> 
     </div>`
       )
     );
