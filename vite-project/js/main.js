@@ -7,9 +7,10 @@ const button3 = document.getElementById("artifacts");
 const buttons = document.querySelectorAll(".button");
 const text = document.getElementById("quote");
 
-buttons.forEach((button) => button.addEventListener("click", whalen));
+buttons.forEach((button) => button.addEventListener("click", btn));
 
-function whalen(e) {
+function btn(e) {
+  text.innerHTML = "";
   if (e.target === button1) {
     getData(API.characters, img.character, img.characteralt);
   } else if (e.target === button2) {
@@ -23,7 +24,6 @@ function whalen(e) {
 
 async function getData(x, y, z) {
   try {
-    text.innerHTML = "";
     const response1 = await fetch(x);
     const data1 = await response1.json();
     data1.forEach((x) =>
@@ -50,7 +50,6 @@ async function getData(x, y, z) {
 
 async function data2(x, y, z) {
   try {
-    text.innerHTML = "";
     const response1 = await fetch(x);
     const data1 = await response1.json();
     data1.forEach((x) =>
@@ -76,7 +75,6 @@ async function data2(x, y, z) {
 
 async function data3(x, y, z) {
   try {
-    text.innerHTML = "";
     const response1 = await fetch(x);
     const data1 = await response1.json();
     data1.forEach((x) =>
